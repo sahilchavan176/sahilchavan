@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #3494e6, #ec6ead);
+            text-align: center;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #1e1e1e;
+            padding: 20px;
+            font-size: 36px;
+            font-weight: 700;
+            color: #ee4c7f;
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            transform: translateY(50px);
+            opacity: 0;
+            animation: slideUp 1s ease-out forwards;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .gallery {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 0.5s forwards;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-out;
+            cursor: pointer;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-out;
+        }
+
+        .overlay span {
+            font-size: 20px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .gallery img:hover + .overlay {
+            opacity: 1;
+        }
+
+        footer {
+            background-color: #1e1e1e;
+            padding: 10px;
+            color: #ee4c7f;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .text {
+            max-width: 600px;
+            text-align: center;
+            margin: 0 auto;
+            color: #fff;
+        }
+
+        .message {
+            background-color: #ffc0cb; /* Light pink background color */
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: left;
+            color: #333; /* Change font color here */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Happy Birthday, Love!
+    </header>
+
+    <section>
+        <div class="text">
+            <p>Dear Isha,</p>
+            <p>Wishing you a day filled with joy, love, and all the happiness in the world. May this year bring you success and fulfillment in everything you do.</p>
+            <p>Thank you for being a wonderful part of my life. Here's to many more special moments together!</p>
+
+            <!-- Your personalized message -->
+            <div class="message">
+                <p>Isha's birthday 🎂</p>
+
+<p>Hey Love Happy Birthday to you 🎉. So here we are its been like a year of us know eachother and slowly slowly falling into more love each day we spent together. Uk i feel so happy, whenever i think of u it just reminds me that well i hot her and she is my love and i have nothing to fear of. So its ur special day ik u don't like birthdays much but uk i will try my best to make it somthing special for u , something u don't remember of regrets but special, somthing which u would be happy to spend some time with. Ik its hard but atleast i can try that for u. After all that u have done for me. Its so amazing, i can't even make word's out of expression and feelings i am having rn. Its just amazing to have such a friend in my life. U are my safe place. 
+U remember the u hugged me, our first hug ,i still remember you holding me tight and making the hug as comfortable as possible to make me feel comfortable. I still remember it it was really beautiful. I was thinking of that hug for days and then i started to know about my feelings much better. That i was in love even though i knew it but this time it was much more than that idk what but it felt like eternity. You know love, i really want to experience that love again the lust the beauty of how we started to know eachother the jealousy and everything. It was so beautiful, like spending time with u our morning walks then our first kiss. I still remember the taste of ur lips the smell of ur hairs and the smile on ur face. It makes me fall for u even more. U are just so perfect. Just imagining the our past is so beautiful it makes me happy. I hope it make u happy as well. Well ofc it does there's no question about it. Ik u love me. 
+Uk i keep watching our photos. It a lot of memories for me happy one. I just look at ur photos and keep smiling alone. It just makes me feel better idk it just does. Uk isha i really miss u a lot ik we both are busy these days but I really want to meet u often hug u give u forehead kisses hold hands and have a walk and Much more  I am always here for u whenever u need me enjoy ur day love spend some time with ur family</p>
+<p>I Love you Darling 💕</p>
+<p>Your princess 😂🥰</p>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="https://i.postimg.cc/9Fvtcz7d/1704527483146.jpg" alt="Photo 1">
+            <img src="https://i.postimg.cc/xdPKGRF5/1704527483163.jpg" alt="Photo 2">
+            <img src="https://i.postimg.cc/9MFyL76h/1704527483177.jpg" alt="Photo 3">
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+
+    <footer>
+        With love, Your prince's 🧚‍♀
+    </footer>
+</body>
+</html>
